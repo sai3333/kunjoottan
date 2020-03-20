@@ -1,1 +1,1 @@
-worker: ./bin/tgbot
+worker: ./bin/main
