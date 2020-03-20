@@ -1,2 +1,2 @@
-worker: go-poori
+web: go-poori
 
