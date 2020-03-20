@@ -1,1 +1,2 @@
-worker: ./bin/main
+worker: ./bin/go-poori
+
