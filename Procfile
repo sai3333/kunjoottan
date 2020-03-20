@@ -1,1 +1,1 @@
-web: mybot
+Worker: mybot
