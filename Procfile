@@ -1,2 +1,2 @@
-worker: ./bin/go-poori
+worker: go-poori
 
