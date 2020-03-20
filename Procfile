@@ -1,3 +1,3 @@
-web: bin/go-poori
+web: .bin/go-poori
 
 
