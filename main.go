@@ -23,7 +23,7 @@ func main() {
 			continue
 		}
 
-		msg := tgbot.NewMessage(update.Message.Chat.ID, "podi poori")
+		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬")
 		bot.Send(msg)
 	}
 }
