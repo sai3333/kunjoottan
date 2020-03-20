@@ -1,2 +1,2 @@
-web: go-poori
+web: main.go
 
