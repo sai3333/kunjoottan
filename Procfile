@@ -1,2 +1,3 @@
-web: main.go
+web: bin/go-poori
+
 
