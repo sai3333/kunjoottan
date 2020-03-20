@@ -1,1 +1,1 @@
-web: go-poori
+web: mybot
