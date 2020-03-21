@@ -24,9 +24,9 @@ func main() {
 		}
 
 		msg := tgbot.NewMessage(update.Message.Chat.ID)
-		var list = "fuck off",
-		           "funda mayir",
-		           "പോടീ പൂറി🤬🤬🤬🤬"
+		var list = "fuck off ,
+		            funda mayir ,
+		            പോടീ പൂറി🤬🤬🤬🤬"
 		msg = list
 		bot.Send(list)
 		
