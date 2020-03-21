@@ -7,7 +7,22 @@ import (
 	tgbot "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-RUN_STRINGS = (
+func main() {
+	bot, err := tgbot.NewBotAPI("987206364:AAGKPNcUnwPjXQdJOBUJ9RPjo6HZ735CHGY")
+	if err != nil {
+		log.Panic(err)
+		return
+	}
+	fmt.Print("Authorized on account %s")
+
+	u := tgbot.NewUpdate(0)
+	updates, err := bot.GetUpdatesChan(u)
+
+	for update := range updates {
+		if update.Message == nil { // ignore any non-Message Updates
+			continue
+		}
+  RUN_STRINGS = (
     "ഇരുട്ട് നിറഞ്ഞ എന്റെ ഈ ജീവിതത്തിലേക്ക് ഒരു തകർച്ചയെ ഓർമ്മിപ്പിക്കാൻ എന്തിന് ഈ ഓട്ടക്കാലണ ആയി നീ വന്നു",
     "നമ്മൾ നമ്മൾ പോലുമറിയാതെ അധോലോകം ആയി മാറിക്കഴിഞ്ഞിരിക്കുന്നു ഷാജിയേട്ടാ...",
     "എന്നെ ചീത്ത വിളിക്കു... വേണമെങ്കിൽ നല്ല ഇടി ഇടിക്കു... പക്ഷെ ഉപദേശിക്കരുത്.....",
@@ -39,25 +54,7 @@ RUN_STRINGS = (
     "അവളെ ഓർത്ത് കുടിച്ച കല്ലും നനഞ്ഞ മഴയും വേസ്റ്റ്....",
     "എന്നോട് പറ ഐ ലവ് യൂ ന്ന്....",
     "അല്ല ഇതാര് വാര്യംപിള്ളിയിലെ മീനാക്ഷി അല്ലയോ... എന്താ മോളെ സ്കൂട്ടറില്.... "
-  
-)
-
-func main() {
-	bot, err := tgbot.NewBotAPI("987206364:AAGKPNcUnwPjXQdJOBUJ9RPjo6HZ735CHGY")
-	if err != nil {
-		log.Panic(err)
-		return
-	}
-	fmt.Print("Authorized on account %s")
-
-	u := tgbot.NewUpdate(0)
-	updates, err := bot.GetUpdatesChan(u)
-
-	for update := range updates {
-		if update.Message == nil { // ignore any non-Message Updates
-			continue
-		}
-
+ )
 		msg := tgbot.NewMessage(update.Message.Chat.ID, "podi poori")
 		RUN_STRINGS := msg
 		bot.Send(RUN_STRINGS)
