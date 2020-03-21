@@ -24,9 +24,9 @@ func main() {
 		}
 
 		msg1 := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬")
-		msg2 := tgbot.NewMessage(update.Message.Chat.ID, "fuck off")
+		
 		
 		bot.Send(msg1)
-		bot.Send(msg2)
+		
 	}
 }
