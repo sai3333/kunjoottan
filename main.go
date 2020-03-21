@@ -23,10 +23,12 @@ func main() {
 			continue
 		}
 
-		msg1 := tgbot.NewMessage(update.Message.Chat.ID)
+		msg := tgbot.NewMessage(update.Message.Chat.ID)
+		list := "fuck off",
+		        "funda mayir",
+		         ""
 		
-		
-		bot.Send(msg1)
+		bot.Send(msg)
 		
 	}
 }
