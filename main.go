@@ -24,7 +24,7 @@ func main() {
 		}
 
 		msg := tgbot.NewMessage(update.Message.Chat.ID)
-		as = "fuck" 
+		as := "fuck, secx" 
 		msg = as
 		bot.Send(as)
 		
