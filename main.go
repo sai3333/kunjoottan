@@ -13,7 +13,7 @@ func main() {
 		log.Panic(err)
 		return
 	}
-	fmt.Print("Authorized on account %s")
+	fmt.Print("connected duccessfully")
 
 	u := tgbot.NewUpdate(0)
 	updates, err := bot.GetUpdatesChan(u)
@@ -24,7 +24,7 @@ func main() {
 		}
 		
 	
-		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬") 
+		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬") #abbusive message
 		bot.Send(msg)
 	}
 }
