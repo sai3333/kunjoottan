@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	bot, err := tgbot.NewBotAPI("899333580:AAH4BOeUZqTup-TTdJtNsjyQvCBipLuk69k")
+	bot, err := tgbot.NewBotAPI("899333580:AAH4BOeUZqTup-TTdJtNsjyQvCBipLuk69k") //token from botfather
 	if err != nil {
 		log.Panic(err)
 		return
@@ -24,7 +24,7 @@ func main() {
 		}
 		
 	
-		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬") #abbusive message
+		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬") //abbusive message
 		bot.Send(msg)
 	}
 }
