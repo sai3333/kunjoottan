@@ -5,3 +5,4 @@ AND PASTE UR BOT TOKEN THEN CLICK DEPLOY BUTTON
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+KEEP A PUBLIC FORK TOO 
