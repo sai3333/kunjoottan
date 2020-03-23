@@ -1,1 +1,1 @@
-Worker: mybot
+Worker: asyncio
