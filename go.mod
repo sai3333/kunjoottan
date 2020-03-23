@@ -1,4 +1,4 @@
-module mybot
+module asyncio
 
 go 1.14
 
