@@ -24,7 +24,7 @@ func main() {
 		}
 		
 	
-		msg := tgbot.NewMessage(update.Message.Chat.ID, "പോടീ പൂറി🤬🤬🤬🤬") //abbusive message
+		msg := tgbot.NewMessage(update.Message.Chat.ID, "Hey Must join t.me/The_Tech_Hackers") //message
 		bot.Send(msg)
 	}
 }
